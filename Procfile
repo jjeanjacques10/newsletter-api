@@ -1,0 +1,1 @@
+web: ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/main/server.ts
