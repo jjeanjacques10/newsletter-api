@@ -8,32 +8,31 @@ API to return a list of news from a newslletter.
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
 
+
+## Getting started
+
 ### Configuration Newslletter #1
 
-set the following environment variables:
+set the following environment variables in `.env`:
 
 ``` bash
-GOOGLE_API_KEY=<your-google-api-key>
+GOOGLE_SHEET_ID=
+
+PROJECT_ID=
+PRIVATE_KEY_ID=
+PRIVATE_KEY=
+CLIENT_EMAIL=
+CLIENT_ID=
+CLIENT_X509_CERT_URL=
 ```
 
-create file `src\main\config\client_secret.json` with the following content:
+### Running the server
 
-``` json
-{
-  "type": "",
-  "project_id": "",
-  "private_key_id": "",
-  "private_key": "",
-  "client_email": "",
-  "client_id": "",
-  "auth_uri": "",
-  "token_uri": "",
-  "auth_provider_x509_cert_url": "",
-  "client_x509_cert_url": ""
-}
+``` bash
+npm run dev
 ```
 
-### Newsletters configuted
+## Newsletters configuted
 
 - [#1] Filipe Deschamps Newsletter (https://filipedeschamps.com.br/newsletter)
 

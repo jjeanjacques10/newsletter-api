@@ -8,6 +8,7 @@ export class FilipedeschampsController implements Controller {
             const news = await new ReadSheetService().getNews()
             return success(news)
         } catch (error) {
+            console.error(error)
             return serverError()
         }   
     }
