@@ -1,0 +1,29 @@
+{
+    "extends": "standard-with-typescript",
+    "plugins": [
+    ],
+    "parserOptions": {
+        "project":"./tsconfig.json"
+    },
+    "settings":
+    {
+    },
+    "rules":{
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+              "checksVoidReturn": false
+            }
+          ],
+          "no-unused-expressions": "off",
+          "@typescript-eslint/no-unused-expressions": ["error"],
+          "@typescript-eslint/naming-convention": [
+            "error",
+            {
+              "selector": "variable",
+              "format": ["camelCase","snake_case"]
+            }
+          ]
+    }
+    
+}
