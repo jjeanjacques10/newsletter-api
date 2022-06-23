@@ -1,6 +1,18 @@
 ## Newsletter API
 
-API to return a list of news from a newslletter.
+<p align="center">
+    <img src="./files/diagram-jjeanjacques10.png">
+    <br />
+    <br />
+    <a href="https://www.amazon.com.br/Jean-Jacques-Barros-Newsletter-Deschamps/dp/B08RG61BPD">Ver Demo</a>
+    ·
+    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Reportar Bug</a>
+    ·
+    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Solicitar Feature</a>
+</p>
+
+
+API to return a list of news from a newslletter. Currently, the API only supports one newsletter, but it will be extended to support more than one in the future.
 
 ### Technologies
 
@@ -31,6 +43,15 @@ CLIENT_X509_CERT_URL=
 ``` bash
 npm run dev
 ```
+
+call the following URL to get the list of news:
+
+- GET http://localhost:3000/news
+
+or using heroku deployed app:
+
+- GET https://newsletter-deschamps.herokuapp.com/news
+
 
 ## Newsletters configuted
 
