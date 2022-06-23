@@ -11,8 +11,9 @@ export class FilipedeschampsController implements Controller {
 
     async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
         try {
-            console.log('handle')
-            const news = await this.readSheetService.getNews()
+            const useCache = httpRequest.query.cache == 'false' ? false : true
+        
+            const news = await this.readSheetService.getNews(useCache)    
             return success(news)
         } catch (error) {
             console.error(error)

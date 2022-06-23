@@ -13,9 +13,9 @@ export default class ReadSheetService {
         this.newsRepository = new NewsRepository(RedisHelpers.client);
     }
 
-    async getNews() {
+    async getNews(useCache: boolean = true) {
         const newsCached = await this.newsRepository.get('news')
-        if (newsCached != null) {
+        if (newsCached != null && useCache) {
             console.log('getNews from cache')
             return JSON.parse(newsCached ?? '[]');
         }
@@ -31,6 +31,7 @@ export default class ReadSheetService {
 
         const news = this.cleanText(rows[(rows.length - 1)].Message);
 
+        console.log('getNews update cache')
         this.newsRepository.set('news', JSON.stringify(news), 10 * 1000);
         return news;
     }
