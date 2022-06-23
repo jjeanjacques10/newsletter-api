@@ -55,7 +55,13 @@ or using heroku deployed app:
 
 ## Newsletters configuted
 
-- [#1] Filipe Deschamps Newsletter (https://filipedeschamps.com.br/newsletter)
+- #1 Filipe Deschamps Newsletter (https://filipedeschamps.com.br/newsletter)
+
+## Next steps
+
+- [ ] Update cache parameter in request to get the latest news
+- [ ] Add support for more than one newsletter
+- [ ] Return the list of news in a Text plain format
 
 ---
 developed by [@jjeanjacques10](https://github.com/jjeanjacques10)
