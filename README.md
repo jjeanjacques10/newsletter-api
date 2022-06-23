@@ -19,11 +19,11 @@ API that returns a JSON news list of popular newsletters. Currently, the API onl
 * [TypeScript](https://www.typescriptlang.org/)
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
-
+* [Redis](https://redis.io/)
 
 ## Getting started
 
-### Configuration Newslletter #1
+### Configuration Newsletter #1
 
 set the following environment variables in `.env`:
 
