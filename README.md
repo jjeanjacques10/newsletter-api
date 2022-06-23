@@ -36,12 +36,23 @@ PRIVATE_KEY=
 CLIENT_EMAIL=
 CLIENT_ID=
 CLIENT_X509_CERT_URL=
+PRODUCTION=< true | false >
+
+REDIS_URL=
 ```
 
 ### Running the server
 
 ``` bash
+npm install
 npm run dev
+```
+
+to run the server in production mode, set the `PRODUCTION` environment variable to `true`
+
+``` bash
+npm install
+npm run start
 ```
 
 call the following URL to get the list of news:
