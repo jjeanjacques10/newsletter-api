@@ -12,7 +12,7 @@
 </p>
 
 
-API to return a list of news from a newslletter. Currently, the API only supports one newsletter, but it will be extended to support more than one in the future.
+API that returns a JSON news list of popular newsletters. Currently, the API only supports one newsletter, but it will be extended to support more than one in the future.
 
 ### Technologies
 
