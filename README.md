@@ -4,7 +4,7 @@
     <img src="./files/diagram-jjeanjacques10.png">
     <br />
     <br />
-    <a href="https://www.amazon.com.br/Jean-Jacques-Barros-Newsletter-Deschamps/dp/B08RG61BPD">Ver Demo</a>
+    <a href="https://newsletter-deschamps.herokuapp.com/news">Ver Demo</a>
     ·
     <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Reportar Bug</a>
     ·
