@@ -61,7 +61,7 @@ call the following URL to get the list of news:
 
 or using heroku deployed app:
 
-- GET https://newsletter-deschamps.herokuapp.com/news
+- GET https://api-newsletter.herokuapp.com/news
 
 
 ## Newsletters configuted
