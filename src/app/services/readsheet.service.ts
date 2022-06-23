@@ -2,20 +2,35 @@ import { GoogleSpreadsheet } from 'google-spreadsheet'
 import cheerio from 'cheerio'
 import { google } from '../../main/config/variables'
 import { v4 as uuidv4 } from 'uuid';
+import { NewsRepository } from '../repositories/newsRepository';
+import { RedisHelpers } from '../../main/database/redisConfiguration';
 
 export default class ReadSheetService {
+
+    newsRepository
+
+    constructor() {
+        const newsRepository = new NewsRepository(RedisHelpers.client);
+    }
+
     async getNews() {
+        if (this.newsRepository.get('news') != null) {
+            return JSON.parse(this.newsRepository.get('news'));
+        }
         const doc = new GoogleSpreadsheet(google.api_key)
 
         const creds = google.credentials
-    
+
         await doc.useServiceAccountAuth(creds);
         await doc.loadInfo();
 
         const sheet = doc.sheetsByIndex[0];
         const rows = await sheet.getRows();
 
-        return this.cleanText(rows[(rows.length - 1)].Message);
+        const news = this.cleanText(rows[(rows.length - 1)].Message);
+
+        this.newsRepository.set('news', JSON.stringify(news), 10 * 1000);
+        return news;
     }
 
     private cleanText(email) {

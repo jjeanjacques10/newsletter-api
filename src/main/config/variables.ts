@@ -24,3 +24,10 @@ export const google = {
     "client_x509_cert_url": process.env.CLIENT_X509_CERT_URL
   }
 }
+
+export const cache = {
+  host: process.env.REDIS_HOST,
+  password: process.env.REDIS_PASSWORD,
+  port: process.env.REDIS_PORT,
+  prefix: process.env.REDIS_PREFIX
+}
