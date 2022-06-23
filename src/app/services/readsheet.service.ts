@@ -1,6 +1,6 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import cheerio from 'cheerio'
-import { google } from 'src/main/config/variables'
+import { google } from '../../main/config/variables'
 import { v4 as uuidv4 } from 'uuid';
 
 export default class ReadSheetService {

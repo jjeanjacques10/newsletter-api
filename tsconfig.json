@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "rootDir": "./src",
         "outDir": "./dist",
         "module": "commonjs",
         "target": "ES2019",
@@ -10,5 +11,8 @@
         "experimentalDecorators": true,
         "resolveJsonModule": true,
         "baseUrl": "./"
-    }
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
 }

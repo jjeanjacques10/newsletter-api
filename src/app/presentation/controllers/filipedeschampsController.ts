@@ -1,4 +1,4 @@
-import ReadSheetService from 'src/app/services/readsheet.service'
+import ReadSheetService from '../../../app/services/readsheet.service'
 import { serverError, success } from '../helpers/http-helpers'
 import { Controller, HttpRequest, HttpResponse } from '../protocolos'
 

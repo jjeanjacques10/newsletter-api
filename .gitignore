@@ -6,3 +6,5 @@ src/main/config/client_secret.json
 package-lock.json
 yarn.lock
 yarn-error.log
+
+dist
