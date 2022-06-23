@@ -70,7 +70,7 @@ or using heroku deployed app:
 
 ## Next steps
 
-- [ ] Update cache parameter in request to get the latest news
+- [x] Update cache parameter in request to get the latest news
 - [ ] Add support for more than one newsletter
 - [ ] Return the list of news in a Text plain format
 - [ ] Observability and monitoring with Prometheus + Grafana
