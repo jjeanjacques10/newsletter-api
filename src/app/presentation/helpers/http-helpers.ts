@@ -1,7 +1,6 @@
 import { InvalidParamError, MissingParamError, NotFoundError, ServerError, UnauthorizedError } from '../errors'
 import { HttpResponse } from '../protocolos'
-export const serverError = (): HttpResponse => {
-  const error = new ServerError()
+export const serverError = (error): HttpResponse => {
   return {
     statusCode: 500,
     body: {

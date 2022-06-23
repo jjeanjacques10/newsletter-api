@@ -7,15 +7,17 @@ import { RedisHelpers } from '../../main/database/redisConfiguration';
 
 export default class ReadSheetService {
 
-    newsRepository
+    private newsRepository: NewsRepository
 
     constructor() {
-        const newsRepository = new NewsRepository(RedisHelpers.client);
+        this.newsRepository = new NewsRepository(RedisHelpers.client);
     }
 
     async getNews() {
-        if (this.newsRepository.get('news') != null) {
-            return JSON.parse(this.newsRepository.get('news'));
+        const newsCached = await this.newsRepository.get('news')
+        if (newsCached != null) {
+            console.log('getNews from cache')
+            return JSON.parse(newsCached ?? '[]');
         }
         const doc = new GoogleSpreadsheet(google.api_key)
 
