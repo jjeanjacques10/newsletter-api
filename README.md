@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-   <a href="https://www.linkedin.com/in/JeanJacquesBarros/">
+   <a href="https://www.linkedin.com/in/jjean-jacques10/">
       <img alt="Jean Jacques Barros" src="https://img.shields.io/badge/-JeanJacquesBarros-8CC64F?style=flat&logo=Linkedin&logoColor=white" />
    </a>
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/jjeanjacques10/newsletter-api?color=8CC64F">
