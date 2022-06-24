@@ -1,14 +1,30 @@
 ## Newsletter API
 
 <p align="center">
-    <img src="./files/diagram-jjeanjacques10.png">
+    <img src="./files/logo-newsletter-api.png" width="300"/>
     <br />
     <br />
-    <a href="https://newsletter-deschamps.herokuapp.com/news">Ver Demo</a>
+    <a href="https://newsletter-deschamps.herokuapp.com/news">Demo</a>
     ·
-    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Reportar Bug</a>
+    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Solicitar Feature</a>
+    <a href="https://github.com/jjeanjacques10/newsletter-api/issues">Request Feature</a>
+</p>
+
+<p align="center">
+   <a href="https://www.linkedin.com/in/JeanJacquesBarros/">
+      <img alt="Jean Jacques Barros" src="https://img.shields.io/badge/-JeanJacquesBarros-8CC64F?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jjeanjacques10/newsletter-api?color=8CC64F">
+
+  <a href="https://github.com/jjeanjacques10/newsletter-api/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jjeanjacques10/newsletter-api?color=8CC64F">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-8CC64F">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/jjeanjacques10/newsletter-api?color=8CC64F" />
+  <a href="https://github.com/jjeanjacques10/newsletter-api/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/jjeanjacques10/newsletter-api?color=8CC64F&logo=github">
+  </a>
 </p>
 
 
@@ -67,6 +83,10 @@ or using heroku deployed app:
 ## Newsletters configuted
 
 - #1 Filipe Deschamps Newsletter (https://filipedeschamps.com.br/newsletter)
+
+## Diagram
+
+<img src="./files/diagram-jjeanjacques10.png">
 
 ## Next steps
 
