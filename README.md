@@ -68,6 +68,7 @@ to run the server in production mode, set the `PRODUCTION` environment variable 
 
 ``` bash
 npm install
+npm run build
 npm run start
 ```
 
