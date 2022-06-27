@@ -1,10 +1,10 @@
-import { v4 as uuidv4 } from 'uuid'
-import { NewsRepository } from "src/app/repositories/newsRepository"
-import { RedisHelpers } from "src/main/database/redisConfiguration"
-import { INewsletter } from "src/app/services/newsletter/newsletter"
-import { GoogleSpreadsheet } from 'google-spreadsheet'
-import { google } from 'src/main/config/variables'
 import cheerio from 'cheerio'
+import { v4 as uuidv4 } from 'uuid'
+import { GoogleSpreadsheet } from 'google-spreadsheet'
+import { NewsRepository } from "../../../app/repositories/newsRepository"
+import { RedisHelpers } from "../../../main/database/redisConfiguration"
+import { INewsletter } from "../../../app/services/newsletter/newsletter"
+import { google } from '../../../main/config/variables'
 
 export class DeschampsNewsletter implements INewsletter {
     private newsRepository: NewsRepository
