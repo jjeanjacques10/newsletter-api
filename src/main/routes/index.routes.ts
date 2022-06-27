@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { DeschampsNewsletter } from 'src/app/services/newsletter/deschampsNewsletter'
+import { DeschampsNewsletter } from '../../app/services/newsletter/deschampsNewsletter'
 import { NewsletterController } from '../../app/presentation/controllers/newsletterController'
 import { adaptRoute } from '../adapters/express.adapter'
 

@@ -1,4 +1,4 @@
-import { INewsletter } from 'src/app/services/newsletter/newsletter';
+import { INewsletter } from '../../app/services/newsletter/newsletter';
 
 export default class ReadSheetService {
 
