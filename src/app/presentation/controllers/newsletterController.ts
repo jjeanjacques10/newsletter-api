@@ -1,4 +1,4 @@
-import { INewsletter } from 'src/app/services/newsletter/newsletter'
+import { INewsletter } from '../../services/newsletter/newsletter'
 import ReadSheetService from '../../services/readsheet.service'
 import { serverError, success } from '../helpers/http-helpers'
 import { Controller, HttpRequest, HttpResponse } from '../protocolos'
