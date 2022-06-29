@@ -1,6 +1,6 @@
 import cheerio from 'cheerio'
 import { GoogleSpreadsheet } from 'google-spreadsheet'
-import { buildResponse } from 'src/app/presentation/helpers/build-response'
+import { buildResponse } from '../../../app/presentation/helpers/build-response'
 import { NewsRepository } from "../../../app/repositories/newsRepository"
 import { INewsletter } from "../../../app/services/newsletter/newsletter"
 import { google } from '../../../main/config/variables'
