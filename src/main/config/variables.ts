@@ -10,7 +10,10 @@ export const production = {
 }
 
 export const google = {
-  api_key: (process.env.GOOGLE_SHEET_ID ?? ""),
+  api_key: {
+    deschamps: (process.env.GOOGLE_SHEET_ID_DESCHAMPS ?? ""),
+    caveiratech: (process.env.GOOGLE_SHEET_ID_CAVEIRA_TECH ?? "")
+  },
   credentials: {
     "type": "service_account",
     "project_id": process.env.PROJECT_ID,

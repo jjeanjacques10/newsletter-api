@@ -27,7 +27,6 @@
   </a>
 </p>
 
-
 API that returns a JSON news list of popular newsletters. Currently, the API only supports one newsletter, but it will be extended to support more than one in the future.
 
 ### Technologies
@@ -44,7 +43,8 @@ API that returns a JSON news list of popular newsletters. Currently, the API onl
 set the following environment variables in `.env`:
 
 ``` bash
-GOOGLE_SHEET_ID=
+GOOGLE_SHEET_ID_DESCHAMPS=
+GOOGLE_SHEET_ID_CAVEIRA_TECH=
 
 PROJECT_ID=
 PRIVATE_KEY_ID=
@@ -74,16 +74,34 @@ npm run start
 
 call the following URL to get the list of news:
 
-- GET http://localhost:3000/news
+* GET <http://localhost:3000/news>
 
 or using heroku deployed app:
 
-- GET https://api-newsletter.herokuapp.com/news
+* GET <https://api-newsletter.herokuapp.com/news>
 
+## Newsletters configured
 
-## Newsletters configuted
+| Newsletter  | Updated    | Endpoint  |
+| ----------- | -------    | --------  |
+| #1 [Filipe Deschamps Newsletter](https://filipedeschamps.com.br/newsletter) | 11:10 AM - 11:50 AM | GET [/news/filipedeschamps](https://api-newsletter.herokuapp.com/news/filipedeschamps) |
+| #2 [Caveira Tech Newsletter](https://caveiratech.com.br) | 11:40 AM | GET [/news/caveiratech](https://api-newsletter.herokuapp.com/news/caveiratech) |
 
-- #1 Filipe Deschamps Newsletter (https://filipedeschamps.com.br/newsletter)
+### Response format
+
+``` json
+{
+    "data": [
+      {
+            "uuid": "ec29d802-95e7-4f2c-8de3-90b69a2197c9",
+            "update_date": "2022-06-29T14:11:39.000Z",
+            "title": "Mark Zuckerberg espera atrair 1 bilhão de usuários para o metaverso até o final da década:",
+            "content": "Mark Zuckerberg espera atrair 1 bilhão de usuários para o metaverso até o final da década: o CEO da Meta acredita que essas pessoas gastarão centenas de dólares por ano em ativos digitais como roupas para seus avatares, em decoração de seus escritórios e casas virtuais, e em aplicativos de produtividade geral.  Zuckerberg também afirma que experiências no metaverso contribuem para uma “sensação realista de presença”, algo não possível através das videochamadas atuais.  As informações são da rede CNBC. ",
+            "source": "https://filipedeschamps.com.br/newsletter"
+        }
+    ]
+}
+```
 
 ## Diagram
 
@@ -91,10 +109,11 @@ or using heroku deployed app:
 
 ## Next steps
 
-- [x] Update cache parameter in request to get the latest news
-- [ ] Add support for more than one newsletter
-- [ ] Return the list of news in a Text plain format
-- [ ] Observability and monitoring with Prometheus + Grafana
+* [x] Update cache parameter in request to get the latest news
+* [x] Add support for more than one newsletter
+* [ ] Return the list of news in a Text plain format
+* [ ] Observability and monitoring with Prometheus + Grafana
+* [ ] Configure cron job to update the cache
 
 ---
 developed by [@jjeanjacques10](https://github.com/jjeanjacques10)
