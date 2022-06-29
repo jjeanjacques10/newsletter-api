@@ -3,8 +3,8 @@ import { GoogleSpreadsheet } from 'google-spreadsheet'
 import { NewsRepository } from "../../../app/repositories/newsRepository"
 import { RedisHelpers } from "../../../main/database/redisConfiguration"
 import { INewsletter } from "../../../app/services/newsletter/newsletter"
+import { buildResponse } from '../../../app/presentation/helpers/build-response'
 import { google } from '../../../main/config/variables'
-import { buildResponse } from 'src/app/presentation/helpers/build-response'
 
 export class CaveiratechNewsletter implements INewsletter {
     private newsRepository: NewsRepository;
